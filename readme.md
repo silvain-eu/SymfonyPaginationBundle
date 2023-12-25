@@ -3,7 +3,6 @@
 
 This is a symfony bundle to paginate doctrine queries.
 
-
 ## Authors
 
 - [@silvainlud](https://www.github.com/silvainlud)
@@ -16,9 +15,10 @@ This is a symfony bundle to paginate doctrine queries.
 [![Latest Stable Version](http://poser.pugx.org/silvain.eu/paginator/v)](https://packagist.org/packages/silvain.eu/paginator)
 
 [![PHP Version Require](http://poser.pugx.org/silvain.eu/paginator/require/php)](https://packagist.org/packages/silvain.eu/paginator)
+
 ## Installation
 
-Install my-project with npm
+Install my-project with composer
 
 ```bash
   composer req silvain.eu/pagination
