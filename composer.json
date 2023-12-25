@@ -17,5 +17,6 @@
         "doctrine/collections": "^2.1",
         "twig/twig": "^2.12|^3.0",
         "doctrine/orm": "^2.15"
-    }
+    },
+    "license": "MIT"
 }
