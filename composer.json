@@ -18,5 +18,6 @@
         "twig/twig": "^2.12|^3.0",
         "doctrine/orm": "^2.15"
     },
-    "license": "MIT"
+    "license": "MIT",
+    "version": "1.0.0"
 }
