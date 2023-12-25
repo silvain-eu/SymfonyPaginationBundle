@@ -5,11 +5,11 @@
 
         {% if previous is defined and previous != false %}
             <li class="page-item">
-                <a class="page-link-btn" rel="prev" href="{{ path(route, query|merge({(pageParameterName): previous})) }}">&laquo;&nbsp;{{ 'label_previous'|trans({}, 'KnpPaginatorBundle') }}</a>
+                <a class="page-link-btn" rel="prev" href="{{ path(route, query|merge({(pageParameterName): previous})) }}">&laquo;&nbsp;{{ 'label_previous'|trans({}, 'pagination') }}</a>
             </li>
         {% else %}
             <li class="page-item disabled">
-                <span class="page-link-btn" disabled>&laquo;&nbsp;{{ 'label_previous'|trans({}, 'KnpPaginatorBundle') }}</span>
+                <span class="page-link-btn" disabled>&laquo;&nbsp;{{ 'label_previous'|trans({}, 'pagination') }}</span>
             </li>
         {% endif %}
 
@@ -64,12 +64,12 @@
         {% if next is defined and next != false %}
             <li class="page-item">
                 <a class="page-link-btn" rel="next"
-                   href="{{ path(route, query|merge({(pageParameterName): next})) }}">{{ 'label_next'|trans({}, 'KnpPaginatorBundle') }}
+                   href="{{ path(route, query|merge({(pageParameterName): next})) }}">{{ 'label_next'|trans({}, 'pagination') }}
                     &nbsp;&raquo;</a>
             </li>
         {% else %}
             <li class="page-item disabled">
-                <span class="page-link-btn" disabled>{{ 'label_next'|trans({}, 'KnpPaginatorBundle') }}&nbsp;&raquo;</span>
+                <span class="page-link-btn" disabled>{{ 'label_next'|trans({}, 'pagination') }}&nbsp;&raquo;</span>
             </li>
         {% endif %}
     </ul>
