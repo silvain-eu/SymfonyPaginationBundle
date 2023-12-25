@@ -1,0 +1,21 @@
+{
+    "name": "silvain.eu/paginator",
+    "description": "Pagination system",
+    "autoload": {
+        "psr-4": {
+            "SilvainEu\\Paginator\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ludwig SILVAIN"
+        }
+    ],
+    "minimum-stability": "RC",
+    "require": {
+        "symfony/framework-bundle": "6.3.*",
+        "doctrine/collections": "^2.1",
+        "twig/twig": "^2.12|^3.0",
+        "doctrine/orm": "^2.15"
+    }
+}

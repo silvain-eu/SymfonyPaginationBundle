@@ -1,0 +1,9 @@
+services:
+  SilvainEu\Paginator\Factory\PaginatorFactoryInterface:
+    class: SilvainEu\Paginator\Factory\PaginatorFactory
+
+  SilvainEu\Paginator\Extension\PaginatorExtension:
+    arguments:
+      $requestStack: '@request_stack'
+    tags:
+      - { name: twig.extension }
