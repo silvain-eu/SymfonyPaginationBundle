@@ -14,7 +14,7 @@ use Twig\TwigFunction;
 
 class PaginatorExtension extends AbstractExtension
 {
-    private const DEFAULT_PAGE_RANGE = 3;
+    private const DEFAULT_PAGE_RANGE = 5;
 
     public function __construct(private readonly RequestStack $requestStack)
     {
@@ -46,7 +46,7 @@ class PaginatorExtension extends AbstractExtension
         $proximity = \floor(self::DEFAULT_PAGE_RANGE / 2);
 
         $startPage = max($page->getCurrentPage() - $proximity, 1);
-        $endPage = min($page->getNbPages() + $proximity, $page->getNbPages());
+        $endPage = min($page->getCurrentPage() + $proximity, $page->getNbPages());
 
         try {
             return $twig->render('@SilvainEuPaginator/paginator.html.twig', [
