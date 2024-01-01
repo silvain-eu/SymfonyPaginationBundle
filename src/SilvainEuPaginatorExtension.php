@@ -10,7 +10,8 @@ use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 class SilvainEuPaginatorExtension extends Extension
 {
 
-    public function load(array $configs, ContainerBuilder $container)
+    /** @inheritDoc */
+    public function load(array $configs, ContainerBuilder $container): void
     {
         $loader = new YamlFileLoader(
             $container,
