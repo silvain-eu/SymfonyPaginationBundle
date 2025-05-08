@@ -16,7 +16,7 @@
         "symfony/framework-bundle": "6.3.*|6.4.*",
         "doctrine/collections": "^2.1",
         "twig/twig": "^2.12|^3.0",
-        "doctrine/orm": "^2.15"
+        "doctrine/orm": "^3.3"
     },
     "license": "MIT",
     "version": "1.0.2"
