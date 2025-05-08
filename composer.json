@@ -19,5 +19,5 @@
         "doctrine/orm": "^2.15"
     },
     "license": "MIT",
-    "version": "1.0.1"
+    "version": "1.0.2"
 }
