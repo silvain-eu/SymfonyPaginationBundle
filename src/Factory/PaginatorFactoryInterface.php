@@ -2,6 +2,7 @@
 
 namespace SilvainEu\Paginator\Factory;
 
+use Closure;
 use Doctrine\ORM\QueryBuilder;
 use SilvainEu\Paginator\Model\Page;
 use SilvainEu\Paginator\Model\PagePartial;
@@ -26,11 +27,11 @@ interface PaginatorFactoryInterface
      * @template T of object
      * @param PagePartialInterface $pagePartial The page partial object.
      * @param QueryBuilder $queryBuilder The query builder.
-     * @param (callable(mixed): T)|null $mapDatas A function to map the datas.
+     * @param (Closure(mixed): T)|null $mapDatas A function to map the datas.
      * @return Page<T> $page The page object.
      */
     public function executeFromDoctrineQuery(
         PagePartialInterface $pagePartial,
         QueryBuilder         $queryBuilder,
-        ?callable            $mapDatas = null): Page;
+        ?Closure             $mapDatas = null): Page;
 }
