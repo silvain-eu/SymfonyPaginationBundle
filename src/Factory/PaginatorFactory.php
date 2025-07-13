@@ -2,6 +2,7 @@
 
 namespace SilvainEu\Paginator\Factory;
 
+use Closure;
 use Doctrine\ORM\NonUniqueResultException;
 use Doctrine\ORM\NoResultException;
 use Doctrine\ORM\QueryBuilder;
@@ -32,7 +33,7 @@ class PaginatorFactory implements PaginatorFactoryInterface
     public function executeFromDoctrineQuery(
         PagePartialInterface $pagePartial,
         QueryBuilder         $queryBuilder,
-        ?callable            $mapDatas = null): Page
+        ?Closure             $mapDatas = null): Page
     {
         $rootAlias = $queryBuilder->getRootAliases()[0];
         $previousSelect = $queryBuilder->getDQLPart('select');
